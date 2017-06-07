@@ -7,7 +7,7 @@ var config = {
    },
    devServer: {
       inline: true,
-      port: 8080
+      port: 3000
    },
    module: {
       loaders: [
@@ -17,8 +17,7 @@ var config = {
             loader: 'babel-loader',
             query: {
                presets: ['es2015', 'react'],
-               plugins: ["transform-object-rest-spread"],
-               loaders: [ 'babel?presets[]=react,presets[]=es2015' ]
+               plugins: ["transform-object-rest-spread"]
             }
          }
       ]
